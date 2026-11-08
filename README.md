@@ -39,7 +39,7 @@ Outside of code I'm an ER tech at a Level I trauma center and I run **CREATEDBYC
 | **cs.visual** | A single-file algorithm visualizer you can open anywhere. | HTML · JavaScript | 🟢 Live |
 | **8-Queens, evolved** | A genetic algorithm that breeds its way to a valid board. | Python | 🟡 Web view planned |
 | **Home lab monitoring** | System monitoring dashboard for my Raspberry Pi lab. | Python · Linux | 🟢 Live |
-| **Where my taxes go** | Enter paycheck info and see your tax money by category, every figure linked to its source. | Python · public data | ⚪ Planned |
+
 
 ---
 
