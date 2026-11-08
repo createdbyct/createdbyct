@@ -1,6 +1,7 @@
-<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
   <img src="assets/banner.svg" alt="Christian Taylor — I build full-stack software and host it on hardware I own." width="100%">
-</p>
+</picture>
 
 <p align="center">
   <a href="https://ctstudio.io"><img src="https://img.shields.io/badge/ctstudio.io-portfolio-eeb73f?style=for-the-badge&labelColor=1a4344" alt="ctstudio.io"></a>
@@ -8,42 +9,57 @@
   <a href="https://createdbyct.studio"><img src="https://img.shields.io/badge/studio-createdbyct.studio-42766c?style=for-the-badge&labelColor=1a4344" alt="CREATEDBYCT STUDIO"></a>
 </p>
 
----
+I'm a Computer Science student at **Illinois State University**, looking for a **software engineering internship**.
+I write Python, FastAPI and SQL on the back end and ship it to real users from my own Raspberry Pis.
 
-### 👋 Hey, I'm Christian
+When I'm not coding I work 12-hour shifts as an **ER tech at a Level I trauma center**, and I run **[CREATEDBYCT STUDIO](https://createdbyct.studio)**, my freelance motion, video and design studio. That's why my projects keep landing where healthcare, design and infrastructure overlap.
 
-Computer Science student at **Illinois State University**, open to **software engineering internships**.
-I work in Python, FastAPI and SQL on the back end, and I ship to real users from Raspberry Pis behind Cloudflare Tunnel.
+<br>
 
-Outside of code I'm an ER tech at a Level I trauma center and I run **CREATEDBYCT STUDIO**, a freelance motion, video and design studio. That mix is why a lot of my projects sit where healthcare, design and infrastructure overlap.
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/running-light.svg">
+  <img src="assets/running.svg" alt="Running now: vsb.ctstudio.io, kekes.ctstudio.io and ctstudio.io, self-hosted on a Raspberry Pi behind Cloudflare Tunnel" width="100%">
+</picture>
 
----
+## Featured · Virtual Suggestion Box
 
-### 📌 Proof, not adjectives
+**[vsb.ctstudio.io](https://vsb.ctstudio.io)** · Suggestion, nomination and survey forms for a group that needed one place to collect them. Real people use it every day.
 
-| | |
-|:--|:--|
-| **In live use** | Virtual Suggestion Box takes real submissions from real people, with separate live and dev instances. |
-| **0.977 ESI-1 recall** | ED Flow, a triage model that rarely misses the sickest patients. |
-| **2 Raspberry Pis** | Running my portfolio, the suggestion box and a client site, all behind Cloudflare Tunnel. |
+- Multi-tenant owner dashboards with role-based access and **TOTP 2FA**
+- Separate **live and dev instances**, restorable from backup
+- FastAPI + SQLite + vanilla JS, with no frameworks, running under systemd on a Raspberry Pi
 
----
+<details>
+<summary><b>How it's hosted</b></summary>
+<br>
 
-### 🛠 Things that run, not just things that exist
+```
+browser ──► Cloudflare Tunnel ──► rasp-server (Pi 5, edge)
+                                        │  LAN
+                                        ▼
+                                  rasp-vps (Pi 2, projects)
+                                  ├─ vsb        FastAPI · SQLite · systemd
+                                  ├─ kekes      FastAPI · nginx
+                                  └─ ctstudio   nginx
+```
 
-| Project | What it is | Stack | Status |
-|:--|:--|:--|:--|
-| **[Virtual Suggestion Box](https://vsb.ctstudio.io)** | Suggestion, nomination and survey forms with owner dashboards, role-based access and TOTP 2FA. | FastAPI · SQLite · vanilla JS | 🟢 Live |
-| **ED Flow** | Triage prediction for emergency departments. 0.977 ESI-1 recall, 0.731 accuracy. | scikit-learn · FastAPI | 🟡 In progress |
-| **[Keke's Iced Beverages](https://kekes.ctstudio.io)** | Client site for a mobile lemonade trailer, with email signups and an admin analytics view. | FastAPI · nginx | 🟢 Live |
-| **cs.visual** | A single-file algorithm visualizer you can open anywhere. | HTML · JavaScript | 🟢 Live |
-| **8-Queens, evolved** | A genetic algorithm that breeds its way to a valid board. | Python | 🟡 Web view planned |
-| **Home lab monitoring** | System monitoring dashboard for my Raspberry Pi lab. | Python · Linux | 🟢 Live |
+No open ports on my router. Each project gets its own subdomain and its own service.
+</details>
 
+## More projects
 
----
+| | Project | What it is | Stack |
+|:-:|:--|:--|:--|
+| 🟡 | **ED Flow** | Triage prediction for emergency departments, built from my time in the ER. **0.977** ESI-1 recall, **0.731** accuracy. | scikit-learn · FastAPI |
+| 🟢 | **[Keke's Iced Beverages](https://kekes.ctstudio.io)** | Client site for a mobile lemonade trailer, with email signups and an admin analytics view. | FastAPI · nginx |
+| 🟢 | **cs.visual** | A single-file algorithm visualizer you can open anywhere. | HTML · JavaScript |
+| 🟢 | **Home lab monitoring** | Dashboard that watches my Pis, servers and the services running on them. | Python · Linux |
+| 🟡 | **8-Queens, evolved** | A genetic algorithm that breeds its way to a valid board. Web view coming. | Python |
+| ⚪ | **Where my taxes go** | Enter paycheck info, see your tax money by category, with every figure linked to its source. | Python · public data |
 
-### 🧰 Stack I reach for
+<sub>🟢 live &nbsp;·&nbsp; 🟡 in progress &nbsp;·&nbsp; ⚪ planned</sub>
+
+## Stack I reach for
 
 <p>
   <img src="https://img.shields.io/badge/Python-1a4344?style=flat-square&logo=python&logoColor=eeb73f" alt="Python">
@@ -60,11 +76,15 @@ Outside of code I'm an ER tech at a Level I trauma center and I run **CREATEDBYC
   <img src="https://img.shields.io/badge/Linux_·_systemd-1a4344?style=flat-square&logo=linux&logoColor=eeb73f" alt="Linux · systemd">
 </p>
 
----
+## Right now
 
-### 📫 Get in touch
+- 🔍 Looking for a **Summer 2027 SWE internship**
+- 🩺 Training ED Flow on more triage data
+- 🧩 Building a web view for the 8-Queens solver
 
-<p>
+<br>
+
+<p align="center">
   <a href="https://ctstudio.io"><img src="https://img.shields.io/badge/Portfolio-eeb73f?style=for-the-badge&labelColor=1a4344" alt="Portfolio"></a>
   <a href="https://christian-taylor.com"><img src="https://img.shields.io/badge/Résumé-eeb73f?style=for-the-badge&labelColor=1a4344" alt="Résumé"></a>
   <a href="mailto:christiantaylor94@gmail.com"><img src="https://img.shields.io/badge/Email-eeb73f?style=for-the-badge&labelColor=1a4344" alt="Email"></a>

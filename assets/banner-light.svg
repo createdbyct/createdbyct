@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-label="Christian Taylor — I build full-stack software and host it on hardware I own.">
+  <defs>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="14" cy="14" r="1.4" fill="#1a4344" fill-opacity="0.12"/>
+    </pattern>
+    <style>
+      .sans{font-family:'Bricolage Grotesque','Segoe UI',Helvetica,Arial,sans-serif}
+      .mono{font-family:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+      @keyframes pulse{0%{r:5;opacity:.7}100%{r:13;opacity:0}}
+      .ring{animation:pulse 2s ease-out infinite}
+      @media (prefers-reduced-motion:reduce){.ring{animation:none;opacity:0}}
+    </style>
+  </defs>
+  <rect width="1280" height="360" rx="18" fill="#f9f5e6"/>
+  <rect width="1280" height="360" rx="18" fill="url(#dots)"/>
+  <text x="64" y="70" class="sans" font-size="22" font-weight="800" fill="#1a4344">ctstudio<tspan fill="#d99a1e">.io</tspan></text>
+  <rect x="64" y="104" width="510" height="36" rx="18" fill="none" stroke="#1a4344" stroke-opacity="0.35"/>
+  <circle class="ring" cx="86" cy="122" r="5" fill="#d99a1e"/>
+  <circle cx="86" cy="122" r="5" fill="#d99a1e"/>
+  <text x="102" y="127" class="mono" font-size="14" fill="#1a4344">Open to software engineering internships · grad 2027</text>
+  <text class="sans" font-size="50" font-weight="800" fill="#1a4344" letter-spacing="-1.2">
+    <tspan x="64" y="208">I build full-stack software and</tspan>
+    <tspan x="64" y="266">host it on hardware I own.</tspan>
+  </text>
+  <text x="64" y="316" class="sans" font-size="19" fill="#1a4344" fill-opacity="0.78">Christian Taylor · Computer Science @ Illinois State</text>
+  <rect x="1176" y="56" width="8" height="248" rx="4" fill="#d99a1e"/>
+  <rect x="1196" y="56" width="8" height="248" rx="4" fill="#42766c"/>
+  <rect x="1216" y="56" width="8" height="248" rx="4" fill="#1a4344" fill-opacity="0.85"/>
+</svg>

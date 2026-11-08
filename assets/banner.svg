@@ -6,30 +6,23 @@
     <style>
       .sans{font-family:'Bricolage Grotesque','Segoe UI',Helvetica,Arial,sans-serif}
       .mono{font-family:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+      @keyframes pulse{0%{r:5;opacity:.7}100%{r:13;opacity:0}}
+      .ring{animation:pulse 2s ease-out infinite}
+      @media (prefers-reduced-motion:reduce){.ring{animation:none;opacity:0}}
     </style>
   </defs>
-
   <rect width="1280" height="360" rx="18" fill="#1a4344"/>
   <rect width="1280" height="360" rx="18" fill="url(#dots)"/>
-
-  <!-- wordmark -->
   <text x="64" y="70" class="sans" font-size="22" font-weight="800" fill="#f9f5e6">ctstudio<tspan fill="#eeb73f">.io</tspan></text>
-
-  <!-- status pill -->
-  <rect x="64" y="104" width="460" height="36" rx="18" fill="none" stroke="#f9f5e6" stroke-opacity="0.4"/>
+  <rect x="64" y="104" width="510" height="36" rx="18" fill="none" stroke="#f9f5e6" stroke-opacity="0.4"/>
+  <circle class="ring" cx="86" cy="122" r="5" fill="#eeb73f"/>
   <circle cx="86" cy="122" r="5" fill="#eeb73f"/>
-  <text x="102" y="127" class="mono" font-size="14" fill="#f9f5e6">Open to software engineering internships · 2027</text>
-
-  <!-- headline -->
+  <text x="102" y="127" class="mono" font-size="14" fill="#f9f5e6">Open to software engineering internships · grad 2027</text>
   <text class="sans" font-size="50" font-weight="800" fill="#f9f5e6" letter-spacing="-1.2">
     <tspan x="64" y="208">I build full-stack software and</tspan>
     <tspan x="64" y="266">host it on hardware I own.</tspan>
   </text>
-
-  <!-- subline -->
   <text x="64" y="316" class="sans" font-size="19" fill="#f9f5e6" fill-opacity="0.82">Christian Taylor · Computer Science @ Illinois State</text>
-
-  <!-- amber accent bar -->
   <rect x="1176" y="56" width="8" height="248" rx="4" fill="#eeb73f"/>
   <rect x="1196" y="56" width="8" height="248" rx="4" fill="#42766c"/>
   <rect x="1216" y="56" width="8" height="248" rx="4" fill="#f9f5e6" fill-opacity="0.85"/>
