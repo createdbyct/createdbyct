@@ -55,7 +55,6 @@ No open ports on my router. Each project gets its own subdomain and its own serv
 | 🟢 | **cs.visual** | A single-file algorithm visualizer you can open anywhere. | HTML · JavaScript |
 | 🟢 | **Home lab monitoring** | Dashboard that watches my Pis, servers and the services running on them. | Python · Linux |
 | 🟡 | **8-Queens, evolved** | A genetic algorithm that breeds its way to a valid board. Web view coming. | Python |
-| ⚪ | **Where my taxes go** | Enter paycheck info, see your tax money by category, with every figure linked to its source. | Python · public data |
 
 <sub>🟢 live &nbsp;·&nbsp; 🟡 in progress &nbsp;·&nbsp; ⚪ planned</sub>
 
